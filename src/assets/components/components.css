@@ -1,0 +1,68 @@
+nav{
+    background-color: transparent;
+    padding: 20px;
+    z-index: 99;
+}
+nav .nav-item{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-item:hover{
+    color: rgb(215, 215, 215);
+}
+.cantidad-carrito{
+    font-size: 10px;
+}
+nav .logo{
+    height: 100px;
+    margin-top: 5px;
+}
+.presentation-bg{
+    background-image: url(https://se-cdn.djiits.com/stormsend/uploads/127ab30d0c710e44a0c8b435859af8c3.jpg?h=1280&thumb=jucFCoIEpzZ9eJaGUHEKVpc%3D&w=5120);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: -150px;
+}
+.presentation h1{
+    font-size: 70px;
+}
+.presentation h3{
+    font-size: 28px;
+    font-weight: 300;
+}
+.img-nav-category{
+    width: 80px;
+    height: 80px;
+}
+.nav-category{
+    position: relative;
+    top: -100px;
+}
+.nav-category a{
+    text-decoration: none;
+    color: black;
+}
+.nav-category a h6{
+    font-size: 14px;
+}
+.featured-card {
+  transition: all 0.4s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-10px);
+}
+
+.featured-card:hover .floating-product {
+  transform:
+    translateX(-50%)
+    translateY(-10px);
+}
