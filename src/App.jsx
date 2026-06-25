@@ -1,4 +1,3 @@
-import Navbar from "./assets/components/Navbar";
 import Home from "./assets/pages/Home";
 import Cart from "./assets/pages/Cart";
 import ProductDetail from "./assets/pages/ProductDetail";
