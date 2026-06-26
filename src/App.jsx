@@ -1,6 +1,6 @@
-import Home from "./assets/pages/Home";
-import Cart from "./assets/pages/Cart";
-import ProductDetail from "./assets/pages/ProductDetail";
+import Home from './pages/Home'
+import Cart from "./pages/Cart";
+import ProductDetail from "./pages/ProductDetail";
 import {Routes, Route} from "react-router-dom";
 import './App.css'
 
