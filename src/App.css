@@ -1,3 +1,46 @@
+
+:root {
+  /* Brand */
+  --color-primary: #111827;
+  --color-primary-soft: #1f2937;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-danger: #ef4444;
+
+  /* Backgrounds */
+  --color-bg: #f8fafc;
+  --color-bg-soft: #f1f5f9;
+  --color-card: #ffffff;
+
+  /* Text */
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-light: #ffffff;
+
+  /* Borders / Shadows */
+  --color-border: #e5e7eb;
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 12px 30px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 20px 45px rgba(15, 23, 42, 0.18);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+
+  /* Layout */
+  --navbar-height: 72px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
 *{
     font-family: "Open Sans", sans-serif;
     margin: 0;

@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {products} from "../services/products";
 import ProductCard from "../components/product/ProductCard";
-import Navbar from "../components/layaout/Navbar";
 import { Link }from "react-router-dom";
 import './pages.css'
 import FeaturedCards from "../components/home/FeatureCards";
@@ -21,7 +20,6 @@ function Home() {
   return (
 
     <>
-        <Navbar/>
         <div className="presentation">
             <div className="presentation-bg">
                 <div className="container">

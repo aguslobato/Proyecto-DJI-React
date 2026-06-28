@@ -1,4 +1,4 @@
-import videoShopSection from '../../media/video-why-shop-section.mp4'
+import videoShopSection from '../../assets/videos/video-why-shop-section.mp4'
 
 function WhyShopSection() {
     const benefits = [
