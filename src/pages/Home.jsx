@@ -10,7 +10,7 @@ function Home() {
 
   const [data, setData] = useState([]);
   useEffect(() => {
-    // Simula API
+    // Simula carga de productos descentralizada
     setTimeout(() => {
       setData(products);
     }, 2000);
@@ -110,7 +110,7 @@ function Home() {
         <div className="bg-grey py-5">
             <div className="container">
                 <div className="row">
-                    {data.map(product => (
+                  º  {data.map(product => (
                         <ProductCard key={product.id} product={product}/>
                     ))}
                 </div>
