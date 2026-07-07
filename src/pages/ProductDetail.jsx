@@ -67,7 +67,7 @@ function ProductDetail() {
           ← Volver al catálogo
         </Link>
 
-        <div className="row g-5 align-items-start mt-3">
+        <div className="row g-4 align-items-start mt-3">
           <div className="col-12 col-lg-6">
             <section className="product-detail-gallery">
               {badgeText && (
