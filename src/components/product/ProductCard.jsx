@@ -5,7 +5,6 @@ function ProductCard({ product }) {
   const badgeText = product.isOffer ? "OFERTA" : product.isNew ? "NUEVO" : null;
 
   return (
-    <div className="col-12 col-md-6 col-lg-4 my-3">
       <article className="product-card h-100">
         <div className="product-image-wrapper">
           {badgeText && (
@@ -36,7 +35,6 @@ function ProductCard({ product }) {
             </div>
         </div>
       </article>      
-    </div>
 
   );
 }

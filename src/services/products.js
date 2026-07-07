@@ -286,37 +286,5 @@ export const products = [
     isNew: false,
     isOffer: true,
     featured: false,
-  },
-  {
-    id: 10,
-    sku: "ACC-DJI-MINI4-BATTERY",
-    name: "Batería DJI Mini 4 Pro",
-    brand: "DJI",
-    category: "Accesorios",
-    description:
-      "Batería inteligente de repuesto para extender tus sesiones de vuelo.",
-    longDescription:
-      "La batería inteligente para DJI Mini 4 Pro permite ampliar el tiempo de vuelo y mantener tu equipo listo para más tomas, viajes y sesiones de grabación.",
-    price: 79,
-    oldPrice: null,
-    stock: 24,
-    rating: 4.8,
-    reviews: 52,
-    image: "/images/products/bateria-dji-mini-4-pro/main.png",
-    images: [
-      "/images/products/bateria-dji-mini-4-pro/main.png",
-      "/images/products/bateria-dji-mini-4-pro/angle.png",
-      "/images/products/bateria-dji-mini-4-pro/side.png",
-    ],
-    specs: [
-      "Batería inteligente",
-      "Compatible con Mini 4 Pro",
-      "Carga eficiente",
-      "Diseño compacto",
-    ],
-    colors: ["Gris"],
-    isNew: false,
-    isOffer: false,
-    featured: false,
-  },
+  }
 ];

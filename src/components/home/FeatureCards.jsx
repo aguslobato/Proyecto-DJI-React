@@ -13,7 +13,7 @@ function FeatureCards() {
     <div className="container my-5">
       <div className="row g-4">
         {featuredProducts.map((product) => (
-          <div key={product.id} className="col-12 col-md-4">
+          <div key={product.id} className="col-12 col-md-4 my-5">
             <div className="position-relative rounded-4 shadow" style={{height: "500px",}}>
               {/* Fondo */}
               <div className="position-absolute top-0 start-0 w-100 h-100" style={{backgroundImage: `url(${product.background})`,backgroundSize: "cover",backgroundPosition: "center bottom",}}/>
