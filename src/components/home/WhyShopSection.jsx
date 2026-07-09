@@ -1,4 +1,4 @@
-import videoShopSection from '../../assets/videos/video-why-shop-section.mp4'
+import videoShopSection from '../../media/video-why-shop-section.mp4'
 
 function WhyShopSection() {
     const benefits = [
@@ -37,7 +37,6 @@ function WhyShopSection() {
                     <div className="col-12">
                         <BenefitCard benefit={benefits[3]} />
                     </div>
-
                     <div className="col-12">
                         <BenefitCard benefit={benefits[6]} />
                     </div>
@@ -46,11 +45,7 @@ function WhyShopSection() {
         </div>
         <h3 className="fw-bold mt-5 mb-3">Handheld · Pro Shooting</h3>
         <div className="promo-banner position-relative rounded overflow-hidden shadow-sm">
-            <video className="w-100 h-100 object-fit-cover"
-            autoPlay
-            muted
-            loop
-            playsInline src="">
+            <video className="w-100 h-100 object-fit-cover" autoPlay muted loop playsInline src="">
                 <source src={videoShopSection}  type="video/mp4"/>
             </video>
             <img src="https://se-cdn.djiits.com/stormsend/uploads/4048945693033536766234ce05dc0243.jpg?h=1330&thumb=nvcNA4A0lYafaIiYvmAkCFc%3D&w=3328" alt="DJI RS 5" className="w-100 h-100 object-fit-cover"/>

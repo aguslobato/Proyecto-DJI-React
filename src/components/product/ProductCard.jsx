@@ -31,8 +31,8 @@ function ProductCard({ product }) {
               <span className={product.stock > 0 ? "stock-dot" : "stock-dot out"}></span>
               {product.stock > 0 ? "En stock" : "Sin stock"}
             </p>
-            <Link to={`/product/${product.id}`} className="product-button">Ver producto</Link>
-            </div>
+            <Link to={`/producto/${product.categorySlug}/${product.slug}`} className="product-button">Ver producto</Link>
+          </div>
         </div>
       </article>      
 

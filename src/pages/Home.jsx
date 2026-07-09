@@ -33,23 +33,11 @@ function Home() {
                 </div>
             </div>
         </div>
-
-
         <div className="py-5">
             <FeaturedCards/>    
             <WhyShopSection/>
         </div>
         
-
-        {/* <div className="bg-grey py-5">
-            <div className="container">
-                <div className="row">
-                    {data.map(product => (
-                        <ProductCard key={product.id} product={product}/>
-                    ))}
-                </div>
-            </div>
-        </div> */}
     </>
 
 
