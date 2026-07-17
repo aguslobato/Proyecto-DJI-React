@@ -1,21 +1,15 @@
-import {useEffect, useState} from "react";
 import {products} from "../services/products";
-import ProductCard from "../components/product/ProductCard";
 import { Link }from "react-router-dom";
 import './pages.css'
 import FeaturedCards from "../components/home/FeatureCards";
 import WhyShopSection from "../components/home/WhyShopSection";
+import ProductShowcase from "../components/home/ProductShowcase";
 
 function Home() {
 
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    // Simula carga de productos descentralizada
-    setTimeout(() => {
-      setData(products);
-    }, 2000);
-
-  }, []);
+    const featuredProducts = products
+  .filter((product) => product.featured)
+  .slice(0, 6);
 
   return (
 
@@ -36,6 +30,7 @@ function Home() {
         <div className="py-5">
             <FeaturedCards/>    
             <WhyShopSection/>
+            <ProductShowcase eyebrow="Selección destacada" title="Tecnología elegida para crear sin límites" description="Descubrí algunos de los equipos más destacados de nuestro catálogo." products={featuredProducts} variant="grid"/>
         </div>
         
     </>

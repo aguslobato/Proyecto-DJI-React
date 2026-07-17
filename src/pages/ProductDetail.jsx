@@ -85,7 +85,7 @@ function ProductDetail() {
                 <span className={product.stock > 0 ? "stock-dot" : "stock-dot out"} />{product.stock > 0 ? `${product.stock} unidades disponibles` : "Sin stock"}
               </div>
               <div className="product-detail-section row">
-                <div className="col-6 col-md-12 my-2">
+                <div className="col-6 col-lg-12 my-2">
                   <h5>Color</h5>
                   <div className="d-flex flex-wrap gap-2">
                     {product.colors.map((color) => (
@@ -93,7 +93,7 @@ function ProductDetail() {
                     ))}
                   </div>
                 </div>
-                <div className="col-6 col-md-12 my-2">
+                <div className="col-6 col-lg-12 my-2">
                   <h5>Cantidad</h5>
                   <div className="quantity-selector">
                     <button type="button" onClick={decreaseQuantity} disabled={quantity <= 1}>-</button>
@@ -103,7 +103,7 @@ function ProductDetail() {
                 </div>
               </div>
               <div className="product-detail-section"></div>
-              <div className="d-flex flex-column flex-md-row gap-3 mt-4">
+              <div className="d-flex flex-column flex-xl-row gap-3 mt-4">
                 <button className="btn btn-dark rounded-pill px-5 py-3" onClick={handleAddToCart} disabled={product.stock === 0}>Agregar al carrito</button>
                 <button className="btn btn-outline-dark rounded-pill px-5 py-3" onClick={handleBuyNow} disabled={product.stock === 0}>Comprar ahora</button>
               </div>
