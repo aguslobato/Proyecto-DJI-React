@@ -30,7 +30,7 @@ function Home() {
         <div className="py-5">
             <FeaturedCards/>    
             <WhyShopSection/>
-            <ProductShowcase eyebrow="Selección destacada" title="Tecnología elegida para crear sin límites" description="Descubrí algunos de los equipos más destacados de nuestro catálogo." products={featuredProducts} variant="grid"/>
+            <ProductShowcase eyebrow="Selección destacada" title="Tecnología elegida para crear sin límites" description="Descubrí algunos de los equipos más destacados de nuestro catálogo." products={featuredProducts} variant="carousel"/>
         </div>
         
     </>

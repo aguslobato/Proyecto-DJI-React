@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import AnimatedProductGrid from "../product/AnimatedProductGrid";
 import ProductCarousel from "../product/ProductCarousel";
 import "../components.css";
-// Más adelante vamos a importar ProductCarousel acá.
 
-import "../components.css";
 
 function ProductShowcase({
   eyebrow = "VisionTech",

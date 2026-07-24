@@ -119,9 +119,236 @@
     translateX(-50%)
     translateY(-10px);
 }
+/*Navbar Mobile*/
+/* ===========================
+   MOBILE NAVBAR
+=========================== */
 
+.mobile-menu-button {
+  width: 40px;
+  height: 40px;
 
-/* WhyShopSection */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+  color: inherit;
+
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.mobile-menu-button span {
+  width: 21px;
+  height: 2px;
+
+  display: block;
+
+  border-radius: 999px;
+
+  background: currentColor;
+
+  transition: var(--transition-fast);
+}
+
+.mobile-menu-button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.mobile-navbar-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1090;
+
+  background: rgba(5, 10, 20, 0.55);
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.mobile-navbar-overlay-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 1100;
+
+  width: min(86vw, 360px);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  box-shadow:
+    18px 0 50px rgba(0, 0, 0, 0.18);
+
+  transform: translateX(-105%);
+
+  transition: transform 0.35s ease;
+}
+
+.mobile-navbar-open {
+  transform: translateX(0);
+}
+
+.mobile-navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mobile-navbar-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.mobile-navbar-close {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.05);
+
+  font-size: 1.8rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.mobile-navbar-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+}
+
+.mobile-navbar-links {
+  display: flex;
+  flex-direction: column;
+
+  padding: 26px 0;
+}
+
+.mobile-navbar-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 4px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+  color: var(--color-primary);
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: var(--transition-fast);
+}
+
+.mobile-navbar-link:hover,
+.mobile-navbar-link.active {
+  padding-left: 10px;
+
+  color: var(--color-accent);
+}
+
+.mobile-navbar-cart-count {
+  min-width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 8px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+  color: white;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.mobile-navbar-footer {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.mobile-navbar-button {
+  width: 100%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 20px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+  color: white;
+
+  font-weight: 800;
+  text-decoration: none;
+
+  transition: var(--transition-fast);
+}
+
+.mobile-navbar-button:hover {
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 992px) {
+  .mobile-navbar,
+  .mobile-navbar-overlay {
+    display: none;
+  }
+}
+/*WhyShopSection*/
 .benefit-card {
   height: 175px;
   transition: all 0.3s ease;
@@ -1131,10 +1358,12 @@
   flex: 0 0 calc(100% / 3);
   min-width: 0;
   padding: 12px;
+
   display: flex;
+  box-sizing: border-box;
 }
 
-.product-carousel-slide > * {
+.product-carousel-slide > .product-card {
   width: 100%;
   height: 100%;
 }
@@ -1149,7 +1378,7 @@
   .product-carousel-slide {
     flex-basis: 100%;
   }
-} 
+}
 .carousel-controls {
   display: flex;
   align-items: center;
