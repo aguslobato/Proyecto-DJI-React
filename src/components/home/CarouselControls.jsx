@@ -1,3 +1,8 @@
+import {
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
+
 function CarouselControls({
   onPrevious,
   onNext,
@@ -6,25 +11,8 @@ function CarouselControls({
 }) {
   return (
     <div className="carousel-controls">
-      <button
-        type="button"
-        className="carousel-control-button"
-        onClick={onPrevious}
-        disabled={disablePrevious}
-        aria-label="Ver productos anteriores"
-      >
-        ←
-      </button>
-
-      <button
-        type="button"
-        className="carousel-control-button"
-        onClick={onNext}
-        disabled={disableNext}
-        aria-label="Ver productos siguientes"
-      >
-        →
-      </button>
+      <button type="button" className="carousel-control-button" onClick={onPrevious} disabled={disablePrevious} aria-label="Ver productos anteriores"><FaChevronLeft /></button>        
+      <button type="button" className="carousel-control-button" onClick={onNext} disabled={disableNext} aria-label="Ver productos siguientes"><FaChevronRight /></button>
     </div>
   );
 }

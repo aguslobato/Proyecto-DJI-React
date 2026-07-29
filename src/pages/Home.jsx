@@ -4,12 +4,13 @@ import './pages.css'
 import FeaturedCards from "../components/home/FeatureCards";
 import WhyShopSection from "../components/home/WhyShopSection";
 import ProductShowcase from "../components/home/ProductShowcase";
+import ExploreCatalogSection from "../components/home/ExploreCatalogSection";
 
 function Home() {
 
     const featuredProducts = products
   .filter((product) => product.featured)
-  .slice(0, 6);
+  .slice(0,6);
 
   return (
 
@@ -30,7 +31,8 @@ function Home() {
         <div className="py-5">
             <FeaturedCards/>    
             <WhyShopSection/>
-            <ProductShowcase eyebrow="Selección destacada" title="Tecnología elegida para crear sin límites" description="Descubrí algunos de los equipos más destacados de nuestro catálogo." products={featuredProducts} variant="carousel"/>
+            <ProductShowcase title="Productos destacados" description="Tecnología seleccionada para llevar tus ideas más lejos." products={featuredProducts} variant="carousel"/>
+            <ExploreCatalogSection />
         </div>
         
     </>
